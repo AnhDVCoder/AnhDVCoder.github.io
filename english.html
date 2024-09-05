@@ -89,18 +89,19 @@
             <a class="navbar-brand" href="">
                 <img src="pictures/profile.JPG" alt="Avatar Logo" style="width:50px;" class="rounded-pill"> <b>AnhDV</b> 
             </a>
+            <a href="/"><img src="pictures/en.png" width="60%"></a>
             <ul class="nav nav-pills ms-auto">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="javascript: document.getElementById('contacts').scrollIntoView();" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="javascript: document.getElementById('projects').scrollIntoView();" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="javascript: document.getElementById('education').scrollIntoView();" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="javascript: document.getElementById('work').scrollIntoView();" class="nav-link">Experience</a></li> 
             </ul>
         </div>
     </nav>
     
 
     <!-- floating small info -->
-    <div class="py-5 mx-5  text-center">
+    <div class="py-5 mx-5  text-center" id="contacts">
         <div class="row justify-content-center">
             <div class="col-md-3 small-info-1 border pb-4" style="min-width: 250px;">
                 <img src="pictures/profile.JPG" style="width:100%" class="rounded-circle">
@@ -139,18 +140,17 @@
             </div>
             <div class="col-md-3 small-info-2 border pb-5" style="min-width: 250px;">
                 <h4 style="padding-top: 80px;">Goals</h4>
-                <p>Participate, learn and improve skills.
+                <p class="mx-2">Participate, learn and improve skills.
                     Through a working environment, develop skills 
                     and cultivate work experience to become
                     a professional employee. Join and
                     Contributing many achievements to the company's projects</p>
-                <button type="button" class="btn btn-primary">About me</button>
-                <button type="button" class="btn btn-outline-primary">Projects</button>
+                    <a class="btn btn-primary" href="javascript: document.getElementById('projects').scrollIntoView();">Projects</a>
             </div>
         </div>
     </div>
 
-    <div class="p-5">
+    <div class="p-5" id="education">
         <div class="row justify-content-center">
             <div class="col-md-4 bg-white border p-5">
                 <h4>Education</h4>
@@ -191,7 +191,7 @@
         </div>
     </div>
 
-    <div class="p-5">
+    <div class="p-5" id="work">
         <div class="row justify-content-center">
             <div class="col-md-4 bg-white border p-5">
                 <div class="border-bottom border-light"></div>
@@ -250,7 +250,7 @@
         </div>
     </div>
 
-    <div class="p-5">
+    <div class="p-5" id="projects">
         <div class="row justify-content-center">
             <div class="col-md-4 bg-white border p-5">
                 <div class="border-bottom border-light"></div>
@@ -263,7 +263,7 @@
                     <i class="bi bi-github"></i>
                 </a>
             </h4>
-                <b>Website Selling Online Courses</b>
+                <b>Website Selling Online Courses (PHP)</b>
                 <br>
                 <img src="pictures/courses.png" width="100%" class="my-5">
                 <b>About</b>
@@ -277,7 +277,7 @@
                 <h4>VN-in-MC <a href="https://github.com/AnhDVCoder/vn-in-mc" class="btn text-white" data-mdb-ripple-init style="background-color: #333333;" href="#!" role="button">
                     <i class="bi bi-github"></i>
                 </a></h4>
-                <b>Scan and Convert Google map into Minecraft map</b>
+                <b>Scan and Convert Google map into Minecraft map (NodeJS)</b>
                 <br>
                 <img src="pictures/demo-scan-gg.gif" width="100%" class="my-5">
                 <b>About</b>
@@ -308,14 +308,12 @@
                 </a>
             </div>
         </div>
-        
     </div>
-    <!-- <div class="container">
-        <small class="text-left">Copyright &copy; Design by AnhDV</small>
-    </div> -->
-    <!-- <div class="container ">
-        <small class="text-right">Copyright &copy; Design by AnhDV</small>
-    </div> -->
 </footer> 
+<script>
+    function scrollToForm() {
+        document.getElementById('lprojects').scrollIntoView();
+}
+</script>
 </body>
 </html>

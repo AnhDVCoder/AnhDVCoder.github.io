@@ -87,20 +87,21 @@
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top bar">
         <div class="container" bis_skin_checked="1">
             <a class="navbar-brand" href="">
-                <img src="pictures/profile.JPG" alt="Avatar Logo" style="width:50px;" class="rounded-pill"> <b>AnhDV</b> 
+                <img src="pictures/profile.JPG" alt="Avatar Logo" style="width:50px;" class="rounded-pill"> <b>AnhDV</b>
             </a>
+            <a href="english.html"><img src="pictures/vn.png" width="60%"></a>
             <ul class="nav nav-pills ms-auto">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="javascript: document.getElementById('contacts').scrollIntoView();" class="nav-link">Liên hệ</a></li>
+                <li class="nav-item"><a href="javascript: document.getElementById('projects').scrollIntoView();" class="nav-link">Dự án</a></li>
+                <li class="nav-item"><a href="javascript: document.getElementById('education').scrollIntoView();" class="nav-link">Học vấn</a></li>
+                <li class="nav-item"><a href="javascript: document.getElementById('work').scrollIntoView();" class="nav-link">Kinh nghiệm</a></li> 
             </ul>
         </div>
     </nav>
     
 
     <!-- floating small info -->
-    <div class="py-5 mx-5  text-center">
+    <div class="py-5 mx-5 text-center" id="contacts">
         <div class="row justify-content-center">
             <div class="col-md-3 small-info-1 border pb-4" style="min-width: 250px;">
                 <img src="pictures/profile.JPG" style="width:100%" class="rounded-circle">
@@ -139,18 +140,18 @@
             </div>
             <div class="col-md-3 small-info-2 border pb-5" style="min-width: 250px;">
                 <h4 style="padding-top: 80px;">Mục tiêu</h4>
-                <p>Tham gia thực tập, học hỏi và nâng cao kĩ năng.
+                <p class="mx-2">Tham gia thực tập, học hỏi và nâng cao kĩ năng.
                     Thông qua môi trường làm việc thực tế phát triển những kĩ năng
                     hiện có của bản thân và trau dồi kinh nghiệm làm việc để trở
-                    thành một nhân viên chuyên nghiệp. Từ đó, tham gia và đóng
-                    góp nhiều thành tựu cho các dự án của công ty</p>
-                <button type="button" class="btn btn-primary">About me</button>
-                <button type="button" class="btn btn-outline-primary">Projects</button>
+                    thành một nhân viên chuyên nghiệp.
+                    Từ đó, tham gia và đóng góp nhiều cho các dự án của công ty</p>
+                <a class="btn btn-primary" href="javascript: document.getElementById('projects').scrollIntoView();">Các dự án</a>
+                
             </div>
         </div>
     </div>
 
-    <div class="p-5">
+    <div class="p-5" id="education">
         <div class="row justify-content-center">
             <div class="col-md-4 bg-white border p-5">
                 <h4>Học vấn</h4>
@@ -192,7 +193,7 @@
         </div>
     </div>
 
-    <div class="p-5">
+    <div class="p-5" id="work">
         <div class="row justify-content-center">
             <div class="col-md-4 bg-white border p-5">
                 <div class="border-bottom border-light"></div>
@@ -251,7 +252,7 @@
         </div>
     </div>
 
-    <div class="p-5">
+    <div class="p-5" id="projects">
         <div class="row justify-content-center">
             <div class="col-md-4 bg-white border p-5">
                 <div class="border-bottom border-light"></div>
@@ -264,7 +265,7 @@
                     <i class="bi bi-github"></i>
                 </a>
             </h4>
-                <b>Website tạo và bán khoá học</b>
+                <b>Website tạo và bán khoá học (PHP)</b>
                 <br>
                 <img src="pictures/courses.png" width="100%" class="my-5">
                 <b>Giới thiệu</b>
@@ -278,7 +279,7 @@
                 <h4>VN-in-MC <a href="https://github.com/AnhDVCoder/vn-in-mc" class="btn text-white" data-mdb-ripple-init style="background-color: #333333;" href="#!" role="button">
                     <i class="bi bi-github"></i>
                 </a></h4>
-                <b>Quét và chuyển đổi bản đồ Google thành thế giới trong Minecraft</b>
+                <b>Quét và chuyển đổi bản đồ Google thành thế giới trong Minecraft (NodeJS)</b>
                 <br>
                 <img src="pictures/demo-scan-gg.gif" width="100%" class="my-5">
                 <b>Giới thiệu</b>
@@ -310,6 +311,6 @@
             </div>
         </div>
     </div>
-</footer> 
+</footer>
 </body>
 </html>
